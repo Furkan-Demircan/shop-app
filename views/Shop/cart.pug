@@ -6,9 +6,6 @@ block content
 
   if(action!== 'undefined' && action === "edit")
     div.alert.alert-success The product has been updated.
-
-  
-
   
   if products.length > 0 
     table.table.table-bordered 
@@ -26,7 +23,7 @@ block content
               img(src=`/img/${product.imageurl}` width='80')
             td #{product.name}
             td #{product.price} TL
-            td #{product.cartItem.quantity}
+            td #{product.quantity}
             td
               form(action='/delete-cartitem' method='POST')
                 input(type='hidden' name='productid' value=`${product.id}`)
@@ -35,7 +32,7 @@ block content
         td(colspan="4")
             - var total = 0
             each product in products 
-                - total +=(product.price * product.cartItem.quantity)
+                - total +=(product.price * product.quantity)
         td #{total} TL
 
     .text-center 

@@ -23,10 +23,11 @@ block content
     .form-group.row.mb-3
       label(for="categoryid").col-sm-2.col-form-label Category
       .col-sm-10
-        select(type="text" name="categoryid").form-control#categoryid
-          option(value='-1') Select Category
-          each category in categories
-            option(value=`${category.id}` selected= category.id === product.categoryId) #{category.name}   
+        option(value='-1') Select Category
+        each category in categories
+          input(type='checkbox' name="categoryids" value = category.id checked=category.selected)
+          |  #{category.name}
+          br
 
     .form-group.row.mb-3
       label(for="description").col-sm-2.col-form-label Description
