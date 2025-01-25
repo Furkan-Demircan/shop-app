@@ -1,6 +1,6 @@
 # Shop App
 
-Shop App, kullanıcıların ürünleri kolayca inceleyip sepete ekleyebileceği ve satın alabileceği modern bir e-ticaret platformudur. Proje, ölçeklenebilirlik ve kullanıcı deneyimine odaklanılarak en güncel teknolojilerle geliştirilmiştir.
+Shop App, kullanıcıların ürünleri kolayca inceleyip sepete ekleyebileceği ve satın alabileceği modern bir e-ticaret platformudur. Proje, ölçeklenebilirlik ve kullanıcı deneyimine odaklanılarak en güncel teknolojilerle geliştirilmeye devam edilmektedir.
 
 [**Read this document in English**](./README.md)
 
